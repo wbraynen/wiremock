@@ -28,11 +28,11 @@ $ ./wiremock.sh # launch the mock server; the shell script will run the wiremock
 
 ### 1. first thing to try
 
-GET /minions/*
+GET /minions/blah
 ```
 $ curl http://localhost:8080/minions/blah
 ```
-"blah" is an appointment id. Try any other id and it will work too :) Notice the delay?! If you don't, look inside the mappings/1. GET :store:appointments.json file and increase the delay from two to three seconds by changing the value of fixedDelayMilliseconds from 2000 to 3000.
+"blah" is a minion id. Try any other id and it will work too :) Notice the delay?! If you don't, look inside the `1_GET_minions_anyResource_withDelay.json` file in the `mappings` folder and increase the delay from two to three seconds by changing the value of `fixedDelayMilliseconds` from 2000 to 3000.
 
 ### 2. second thing to try
 
