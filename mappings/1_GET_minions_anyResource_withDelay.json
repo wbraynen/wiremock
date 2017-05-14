@@ -5,7 +5,7 @@
   },
   "response": {
       "status": 200,
-      "fixedDelayMilliseconds": 3000,
+      "fixedDelayMilliseconds": 2000,
       "jsonBody": {
           "mental_state": "sluggish"
       },
