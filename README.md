@@ -9,7 +9,7 @@ This is a simple example of how to use the WireMock tool (wiremock.org) as a sta
 * mocking stateful behavior (which makes sense when doing PUTs)
 * using `curl` to verify that we have successfully mocked the endpoints
 
-## how to install this demo
+## How to install this demo
 
 1. If you don't already have it, install the Java Runtime Environment (JRE).
 1. Download the wiremock jar file. Link can be found here: http://wiremock.org/docs/running-standalone/
@@ -24,9 +24,9 @@ $ chmod 744 wiremock.sh # make the shell script executable
 $ ./wiremock.sh # launch the mock server; the shell script will run the wiremock.jar for you
 ```
 
-## how to use this demo
+## How to use this demo
 
-### First thing to try
+### first thing to try
 
 GET /minions/*
 ```
@@ -34,7 +34,7 @@ $ curl http://localhost:8080/minions/blah
 ```
 "blah" is an appointment id. Try any other id and it will work too :) Notice the delay?! If you don't, look inside the mappings/1. GET :store:appointments.json file and increase the delay from two to three seconds by changing the value of fixedDelayMilliseconds from 2000 to 3000.
 
-### Second thing to try
+### second thing to try
 
 GET /minions/cd3e
 ```
@@ -42,7 +42,7 @@ $ curl http://localhost:8080/minions/cd3e
 ```
 "cd3e" Different mock json, so no delay this time!
 
-### Third thing to try
+### third thing to try
 
 PUT /minions/cd3e three times using the mock server as a state machine:
 ```
