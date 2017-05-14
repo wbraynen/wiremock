@@ -1,0 +1,15 @@
+{
+  "request": {
+      "method": "GET",
+      "url": "/minions/cd3e"
+  },
+  "response": {
+      "status": 200,
+      "jsonBody": {
+          "mental_state": "quick witted"
+      },
+      "headers": {
+           "Content-Type": "text/plain"
+      }
+   }
+}

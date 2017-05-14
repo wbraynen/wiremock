@@ -1,0 +1,16 @@
+{
+  "request": {
+      "method": "GET",
+      "urlPathPattern": "/minions/(.*)"
+  },
+  "response": {
+      "status": 200,
+      "fixedDelayMilliseconds": 3000,
+      "jsonBody": {
+          "mental_state": "sluggish"
+      },
+       "headers": {
+           "Content-Type": "text/plain"
+      }
+   }
+}

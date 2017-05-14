@@ -1,0 +1,18 @@
+{
+  "scenarioName": "A minion's morning",
+  "requiredScenarioState": "Started",
+  "newScenarioState": "I am set",
+  "request": {
+      "method": "PUT",
+      "url": "/minions/cd3e"
+  },
+  "response": {
+      "status": 200,
+      "jsonBody": {
+          "mental_state": "ready"
+      },
+       "headers": {
+           "Content-Type": "text/plain"
+      }
+   }
+}
