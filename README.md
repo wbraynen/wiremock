@@ -26,7 +26,7 @@ $ ./wiremock.sh # launch the mock server; the shell script will run the wiremock
 
 ## How to use this demo
 
-### first thing to try
+### 1. first thing to try
 
 GET /minions/*
 ```
@@ -34,7 +34,7 @@ $ curl http://localhost:8080/minions/blah
 ```
 "blah" is an appointment id. Try any other id and it will work too :) Notice the delay?! If you don't, look inside the mappings/1. GET :store:appointments.json file and increase the delay from two to three seconds by changing the value of fixedDelayMilliseconds from 2000 to 3000.
 
-### second thing to try
+### 2. second thing to try
 
 GET /minions/cd3e
 ```
@@ -42,7 +42,7 @@ $ curl http://localhost:8080/minions/cd3e
 ```
 "cd3e" Different mock json, so no delay this time!
 
-### third thing to try
+### 3. third thing to try
 
 PUT /minions/cd3e three times using the mock server as a state machine:
 ```
