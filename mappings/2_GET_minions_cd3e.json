@@ -9,7 +9,7 @@
           "mental_state": "quick witted"
       },
       "headers": {
-           "Content-Type": "text/plain"
+           "Content-Type": "application/json"
       }
    }
 }

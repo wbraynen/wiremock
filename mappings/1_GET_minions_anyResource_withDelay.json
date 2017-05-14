@@ -10,7 +10,7 @@
           "mental_state": "sluggish"
       },
        "headers": {
-           "Content-Type": "text/plain"
+           "Content-Type": "application/json"
       }
    }
 }
