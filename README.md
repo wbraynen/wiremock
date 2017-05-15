@@ -72,3 +72,6 @@ Q: Anything I should know about build settings in Xcode related to using WireMoc
 
 A: Yes, possibly.  Here is a related post: http://allegro.tech/2016/10/self-contained-UI-tests-for-ios-applications.html
 
+Q: Are there other tools aside from WireMock with which to mock web services and REST APIs?
+
+A: Yes, lots.  For example: apimocker.js.  Swagger also has a mock server.
