@@ -1,4 +1,4 @@
-# wiremock
+# Introduction to mocking web services using WireMock
 
 This is a simple example of how to use the WireMock tool (wiremock.org) as a standalone mock server. It demos the following features of WireMock:
 
