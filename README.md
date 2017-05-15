@@ -63,27 +63,24 @@ The JSON files that the wiremock server serves from the mappings directory when 
 1. PUT /minions/cd3e: `3a_PUT_minions_cd3e.json` the first time, `3b_PUT_minions_cd3e.json` the second time, `3c_PUT_minions_cd3e.json` the third time.
 
 ## FAQ
-____
 
 Q: Is it OK to use WireMock in an industry setting for free?
 
 A: Yes, last time I checked, WireMock uses the [Apache License](https://github.com/tomakehurst/wiremock/blob/master/LICENSE.txt).
-____
+___
 
 Q: Are there other tools aside from WireMock with which to mock web services and REST APIs?
 
 A: Yes, lots.  For example: apimocker.js.  Swagger also has a mock server.
-____
+___
 
 Q: Anything I should know about build settings in Xcode related to using WireMock in automated UI tests?
 
 A: Yes, possibly.  Here is a related post: http://allegro.tech/2016/10/self-contained-UI-tests-for-ios-applications.html
-
-____
+___
 
 Q: Should the mock json files say "mental_state" or "mentalState"?
 
 A: "JSON" stands for "JavaScript Object Notation", so that might be a reason for jsons to follow JavaScript conventions, which is camelCase.  However, snake_case seems more readable to me in this particular case, so I stuck with "mental_state" instead of "mentalState".  I think I remember seeing readability studies on both sides of the case fence.  [Binkley et al. (2009)](http://www.cs.loyola.edu/~binkley/papers/icpc09-clouds.pdf), for example, report empirical findings in favor of camel case.  [Sharif and Maletic (2010)](http://www.cs.kent.edu/~jmaletic/papers/ICPC2010-CamelCaseUnderScoreClouds.pdf), on the other hand, in their attempt to reproduce an earlier study, report that snake case was quicker to read.  (Also, if your json-parsing-deserialization library expects camelCase, then that might be a good reason to use camel case.)  Because my goal in this tutorial is readability, I went with snake_case.  And if you know of good literature review on this, let me know!
 
-____
 
