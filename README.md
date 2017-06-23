@@ -1,4 +1,4 @@
-# Introduction to mocking web services using WireMock
+# Mocking stateful behavior
 
 This is a simple example of how to use the WireMock tool (wiremock.org) as a standalone mock server. It demos the following features of WireMock:
 
@@ -6,7 +6,7 @@ This is a simple example of how to use the WireMock tool (wiremock.org) as a sta
 * use of regex in pattern-matching endpoints
 * delaying the response
 * GETs and PUTs
-* mocking stateful behavior (which makes sense when doing PUTs)
+* mocking stateful behavior (which makes sense when doing PUTs) <-- NEAT!
 * using `curl` to verify that we have successfully mocked the endpoints
 
 ## How to install this demo
